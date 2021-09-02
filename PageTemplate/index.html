@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ascii Art Web</title>
+
+</head>
+
+
+<body>
+    <form action="ascii-art" method="post" autocomplete="on">
+        <h1> ASCII-ART-WEB </h1>
+        <div>
+            <input type="radio" name="banner" value="standard" id="btnradio1" checked id="standard">
+            <label for="btnradio1">standard</label>
+
+            <input type="radio" name="banner" value="shadow" id="btnradio2" id="shadow">
+            <label for="btnradio2">shadow</label>
+
+            <input type="radio" name="banner" value="thinkertoy" id="btnradio3" id="thinkertoy">
+            <label for="btnradio3">thinkertoy</label>
+        </div>
+        <input type="submit" value="Submit">
+        <div>
+            <textarea placeholder="Text input" type="text" name="data" id="input" required></textarea>
+        </div>
+    </form>
+    <div class="output">
+        <pre>{{ .}} </pre>
+    </div>
+</body>
+
+</html>
